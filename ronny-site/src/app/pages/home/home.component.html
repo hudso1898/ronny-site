@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar></ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class=main>
+                  <div class="type_div">
+            <div class="typewriter">
+               <h1 id='line1'><span class='green'>ronny</span>@mizzou:~$ ./site.sh</h1>
+               <h1 id='line2' [class.appear]='this.appear'>Welcome!</h1>
+            </div>
+                  </div>
+    </div>
+    <div class='info'>
+      <br>
+      <ion-card id='ronny-card'>
+        <img src='../../../assets/ronny-1.jpg'>
+        <ion-card-header>
+          <ion-card-title class='card-header'>Ronny Bazan-Antequera</ion-card-title>
+          <ion-card-subtitle><i>Assistant Teaching Professor</i> | Electrical Engineering and Computer Science, Information Technology</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+      <br>
+      <div class='info-text-div'>
+        <ion-text class='info-text'>
+          <p>    Hi there! My name is Ronny Bazan-Antequera, and I am an assistant teaching professor at the University of Missouri-Columbia.
+            Prior to joining the EECS department, I worked in the industry as a Senior Systems Administrator. I received a Fullbright Scholarship from 
+            Mizzou, where I earned my Master's degree in Computer Science along with an Outstanding Master Student award. I went on to receive my PhD in
+            Electrical Engineering & Computer Science from the University of Missouri.
+          </p>
+        </ion-text>
+        <br>
+        <ion-text class='info-text'>
+          <p>    At Mizzou, I teach a wide variety of Computer Science and Information Technology courses that focus on Linux Systems and Cybersecurity. These courses have been taught both online and in person, and emphasize
+            a "learning by doing" hands-on approach. Much of this information consists of skills and abilities that employers want and expect in the real world of CS and IT in all manner of organizations.
+            Each course has a set of 12 laboratory assignments, where students create and experiment upon virtualized computer systems, both on their own machines (VMWare Workstation/Fusion) and on the cloud (AWS).
+            Each course also features a final project that allows students to expand on the course content and investigate a topic valuable to their own future work as CS/IT professionals.
+          </p>
+        </ion-text>
+        <br>
+        <ion-text class='info-text'>
+          <p>(research interests, publications?? some other stuff can go in paragraph 3, open to ideas, these are just mockups)</p>
+        </ion-text>
+      </div>
+    </div>
+    <ion-text class='ion-text-center' id='courses-header'><h2>Courses</h2></ion-text>
+    <div id='courses-div'>
+      <ion-card class='course-card' id='netsec-card' routerLink='/courses/computer_network_security'>
+        <ion-card-header>
+          <ion-card-title class='course-card-title'>
+            INFOTC 3810 - Computer Network Security
+          </ion-card-title
+        ></ion-card-header>
+      </ion-card>
+      <ion-card class='course-card' id='advsec-card' routerLink='/courses/adv_cyber_security'>
+        <ion-card-header>
+          <ion-card-title class='course-card-title'>
+            INFOTC 3910 - Advanced Cyber Security
+          </ion-card-title
+        ></ion-card-header>
+      </ion-card>
+      <ion-card class='course-card' id='sysadmin-card' routerLink='/courses/system_administration'>
+        <ion-card-header>
+          <ion-card-title class='course-card-title'>
+            INFOTC 3850 - Computer Systems Administration
+          </ion-card-title
+        ></ion-card-header>
+      </ion-card>
+      <ion-card class='course-card' id='forensics-card' routerLink='/courses/digital_forensics'>
+        <ion-card-header>
+          <ion-card-title class='course-card-title'>
+            CS/INFOTC 4910 - Digital Forensics
+          </ion-card-title
+        ></ion-card-header>
+      </ion-card>
+      <ion-card class='course-card' id='unix-card' routerLink='/courses/unix'>
+        <ion-card-header>
+          <ion-card-title class='course-card-title'>
+            CS/INFOTC 3530 - UNIX Operating System
+          </ion-card-title
+        ></ion-card-header>
+      </ion-card>
+      
+    </div>
+  <div>
+    <ion-text><h5 id='contact'>Contact</h5></ion-text>
+    <div id='footer-line'></div>
+    <ion-text><h6 class='info-line'>Email: bazanantequerar@missouri.edu</h6></ion-text>
+    <ion-text><h6 class='info-line'>Office: 2437 L Lafferre Hall</h6></ion-text>
+    <ion-text><h6 class='info-line'>Office Hours: M-F | 8:30AM - 4:30PM</h6></ion-text>
+    <br>
+    <ion-text class='ion-text-center dev-info'><p>A website by <a href='https://www.hudso.dev' target='_blank'>Matt Hudson</a> | <a href='https://www.github.com/hudso1898' target='_blank'>GitHub</a></p></ion-text>
+
+    <ion-text class='ion-text-center pub-info'><p class='pub-info'>
+
+      © 2020 — Curators of the University of Missouri. All rights reserved. 
+      <a href="http://missouri.edu/dmca/" target='_blank'>DMCA</a> and <a href="http://missouri.edu/copyright/" target="_blank">other copyright information</a>.</p></ion-text>
+      
+      <ion-text class='ion-text-center pub-info'><p class='pub-info'>An
+      <a href="http://missouri.edu/eeo-aa/" target="_blank">equal opportunity/access/affirmative action/pro-disabled and veteran employer</a> | 
+      <a href="http://diversity.missouri.edu/communities/disabilities.php" target="_blank">Disability Resources</a>
+    </p></ion-text>
+      <ion-text class='ion-text-center pub-info'>
+        <p class='pub-info'>
+          <ion-icon name=globe-outline></ion-icon> Published by the <a href='http://coas.missouri.edu/' target='_blank'>College of Arts & Science</a> | 
+          <ion-icon name='mail-outline'></ion-icon> <a href='mailto:muasweb@missouri.edu' target='_blank'> Contact Web Group</a>
+        </p>
+      </ion-text>
+      
+  </div>
+</ion-content>

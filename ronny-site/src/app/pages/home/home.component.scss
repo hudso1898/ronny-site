@@ -1,0 +1,240 @@
+
+.main {
+    background-image: url('../../../assets/lafferre.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  position: relative;
+}
+    
+    .agenda{
+        position: relative;
+        width: 100%;
+        float: right;
+    }
+
+/* Footer */
+footer {
+background-color: #333;
+float: left;
+width: 100%;
+color: orange;
+font-family:"Orbitron";
+text-align: center;
+    position: relative;
+bottom: 0;
+    padding: 40px 40px 40px 40px;
+}
+
+    .footer a{
+        color: white;
+        background-color:#333;
+        font-size: 75px;
+        text-decoration: none;
+    }
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+    .type_div {
+  display: flex;  
+  
+}
+
+.typewriter {
+    background-color: rgba(0,0,0,0.9);
+  border: 2px solid white;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-top: 15vh;
+}
+    .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .03em; 
+        font-family: "Orbitron";
+        color: #ffffff;
+        font-size:80px;
+}
+.typewriter h1#line1 {
+    animation: 
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+.typewriter h1#line2 {
+    opacity: 0;
+    border-right: none;
+}
+.typewriter h1.appear {
+    opacity: 1 !important;
+}
+ /*
+    .typewriter h2 {
+  overflow: hidden; 
+  border-right: .15em solid orange;
+  white-space:nowrap; single line 
+  margin: 0 auto;  
+  letter-spacing: .20em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+        font-family: "Orbitron";
+        color: orange;
+        font-size:30px;
+        position: absolute;
+        left: 550px;
+        top: 375px;   
+}
+    */
+    .footer p{
+        float: right;
+        right: 10px;
+        top: 10px;
+        padding-top:20px;
+        padding-bottom: 40px;
+    }
+    .facebook_icon{
+        
+        height:4%;
+        width:4%;
+    }
+    
+    .github_icon{
+        
+        height:4%;
+        width:4%;
+        
+    }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #27e102; }
+}
+.green {
+    color: #27e102;
+}
+#ronny-card {
+    margin: auto;
+    width: 50%;
+    --ion-card-background: white;
+}
+.card-header {
+    color: black;
+}
+div.info {
+    background-color: #f5f5f5;
+    color: black;
+}
+.info-text-div {
+    background-color: white;
+}
+.info-text {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.3em;
+}
+#courses-div {
+    background-image: url('../../../assets/binary.gif');
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-card {
+    width: 45%;
+    height: 40vh;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+.card-image {
+    width: 100%;
+}
+#unix-card {
+    background-image: url('../../../assets/unix.jpg');
+}
+#sysadmin-card {
+    background-image: url('../../../assets/sysadmin.jpg');
+}
+#netsec-card {
+    background-image: url('../../../assets/netsec.jpg');
+}
+#advsec-card {
+    background-image: url('../../../assets/advcybersec.jpg');
+}
+#forensics-card {
+    background-image: url('../../../assets/forensics.jpg');
+}
+#courses-header {
+    background-color: black;
+    color: white;
+}
+.course-card-title {
+    margin-top: 5%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color: rgba(0,0,0,0.9);
+width: max-content;
+padding: 10px;
+border: 2px solid white;
+}
+
+ #netsec-card:hover {
+    box-shadow: 0 0px 3px 2px #21acf7;
+}
+#advsec-card:hover {
+    box-shadow: 0 0px 3px 2px #f72121;
+}
+#sysadmin-card:hover {
+    box-shadow: 0 0px 3px 2px #1dd30c;
+}
+#forensics-card:hover {
+    box-shadow: 0 0px 3px 2px #6121f7;
+}
+#unix-card:hover {
+    box-shadow: 0 0px 3px 2px #ffffff;
+}
+#contact,.info-line {
+    margin-left: 5vw;
+}
+#footer-line {
+    border: 1px solid rgba(163, 163, 163, 0.8);
+    width: 70%;
+    margin-left: 5vw;
+}
+.dev-info a {
+    text-decoration: none;
+    color: #fc2727;
+}
+.pub-info {
+    font-size: 0.9em;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.pub-info a {
+    text-decoration: none;
+}

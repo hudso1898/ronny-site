@@ -1,0 +1,22 @@
+<ion-app>
+    <ion-header>
+      <ion-toolbar>
+        <a href='https://missouri.edu/' target='_blank' slot='start'>
+          <ion-avatar slot='start' id='mu-img'>
+            <img src='../assets/mu-logo.png'>
+          </ion-avatar>
+        </a>
+        <ion-text slot='start'><h3>Ronny Bazan Antequera</h3></ion-text>
+      <ion-buttons slot='start' class='desktop-nav-buttons'>
+      <ion-button routerLink='/home' class='desktop-nav-button' routerLinkActive='active'>Home</ion-button>
+      <ion-button routerLink='/bio' class='desktop-nav-button' routerLinkActive='active'>Biography</ion-button>
+      <ion-button routerLink='/research' class='desktop-nav-button' routerLinkActive='active'>Research</ion-button>
+      <ion-button routerLink='/publications' class='desktop-nav-button' routerLinkActive='active'>Publications</ion-button>
+      <ion-button routerLink='/cv.pdf' class='desktop-nav-button' routerLinkActive='active'>CV</ion-button>
+      <ion-button routerLink='/teaching' class='desktop-nav-button' routerLinkActive='active'>Teaching</ion-button>
+      <ion-button routerLink='/cybertigers' class='desktop-nav-button' routerLinkActive='active'>CyberTigers @ MU</ion-button>
+    </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>
