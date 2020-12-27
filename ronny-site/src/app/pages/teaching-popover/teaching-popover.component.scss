@@ -1,0 +1,13 @@
+a {
+    color: white;
+    transition: color 0.15s;
+    text-decoration: none;
+}
+a:hover {
+    color: #F1B82D;
+    transition: color 0.15s;
+    cursor: pointer;
+}
+a.active {
+    color: lightgreen;
+}
