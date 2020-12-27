@@ -123,9 +123,12 @@ ion-item.selected {
 }
 .desktop-nav-button {
   color: white;
+  border-bottom: none;
+  transition: border-bottom 0.25s;
 }
 .desktop-nav-button.active{
   border-bottom: 2px solid rgb(28, 233, 35);
+  transition: border-bottom 0.25s;
 }
 a {
   text-decoration: none;
@@ -204,4 +207,62 @@ $steps: 10;
     transform: skew((random(10) - 5) + deg);
   }
 }
+}
+.white {
+  color: white;
+}
+#mu-img {
+  transition: all 0.3s;
+  border: none;
+  margin: 5px 10px 5px 5px;
+}
+#mu-img:hover {
+  transition: all 0.3s;
+  border: 2px solid #F1B82D;
+  background-color: rgba(255,255,255,1);
+}
+
+#faculty-link {
+  transition: all 0.2s;
+  position: relative;
+}
+#faculty-h3:hover {
+  &:after {
+    content : "Mizzou Engineering";
+    color: white;
+    font-size: 0.5em;
+    text-align: end;
+    position:absolute;
+    left: 0;
+    top: 0;
+    overflow-x: visible;
+    overflow-y:hidden;
+    white-space: nowrap;
+    border-top: 2px solid #F1B82D;
+    margin-top: 2.3em; /*move the border below the text*/
+    animation-name: faculty-link-border;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes faculty-link-border {
+  from {width: 0%; opacity: 0}
+  to {width: 100%; opacity: 1}
+}
+@keyframes faculty-link-border-out {
+  from {width: 100%; opacity: 1}
+  to {width: 0%; opacity: 0}
+}
+#faculty-h3 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-bottom: 0;
+  transition: padding-bottom 0.25s;
+  position: relative;
+}
+#faculty-h3:hover {
+  padding-bottom: 16px;
+  transition: padding-bottom 0.3s;
 }
