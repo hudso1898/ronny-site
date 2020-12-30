@@ -4,6 +4,34 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <img id='course-image' [src]='course().image'>
+<ion-content *ngIf='course()'>
+  <div>
+    <img id='course-image' [src]='course().image'>
+    <ion-text class='ion-text-center'><h1 id='course-title'>{{course().title}}</h1></ion-text>
+  </div>
+  <div>
+    <ion-text class='ion-text-center'><h3>Course Description</h3></ion-text>
+    <ion-text><p id='course-description'>{{course().description}}</p></ion-text>
+  </div>
+  <div>
+    <ion-text class='ion-text-center'><h3>Learning Objectives</h3></ion-text>
+    <ion-list inset id='course-objectives-list'>
+      <ion-item *ngFor='let objective of course().objectives'>
+        <ion-icon [name]='objective.icon' [color]='objective.color' class='list-icon'></ion-icon>
+        {{objective.text}}
+      </ion-item>
+    </ion-list>
+  </div>
+  <div>
+    <ion-text class='ion-text-center'><h3>Course Topics</h3></ion-text>
+    <ion-list inset id='course-topics-list'>
+      <ion-item *ngFor='let topic of course().topics'>
+        {{topic}}
+      </ion-item>
+    </ion-list>
+  </div>
+  <div>
+    <ion-text class='ion-text-center'><h3>Credit Hours: {{course().hours}}</h3></ion-text>
+    <ion-text class='ion-text-center'><h4>Prerequisites: {{course().prereq}}</h4></ion-text>
+  </div>
 </ion-content>
