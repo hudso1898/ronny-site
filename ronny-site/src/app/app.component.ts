@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Platform, PopoverController } from '@ionic/angular';
+import { MenuController, Platform, PopoverController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { TeachingPopoverComponent } from './pages/teaching-popover/teaching-popover.component';
+import { MobileService } from './services/mobile.service';
 
 @Component({
   selector: 'app-root',
@@ -50,7 +51,9 @@ export class AppComponent implements OnInit {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private popoverCtrl: PopoverController
+    private popoverCtrl: PopoverController,
+    private mobileService: MobileService,
+    private menuCtrl: MenuController
   ) {
     this.initializeApp();
   }
@@ -76,5 +79,15 @@ export class AppComponent implements OnInit {
       event: event    
     });
     return await popover.present();
+  }
+  isMobile(): boolean {
+    console.dir(this.mobileService)
+    return this.mobileService.isMobile();
+  }
+  async openMenu() {
+    return await this.menuCtrl.open('main');
+  }
+  async closeMenu() {
+    return await this.menuCtrl.close('main');
   }
 }
