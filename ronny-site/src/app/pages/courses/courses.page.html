@@ -5,6 +5,23 @@
 </ion-header>
 
 <ion-content *ngIf='course()'>
+  <ion-header class='sticky'>
+    <ion-toolbar>
+      <ion-buttons slot='start' class='left-arrow' [class.mobile-left-arrow]='this.mobileService.isMobile()'>
+        <ion-button (click)='prevCourse()'><ion-icon class='arrow' color='dark' name='chevron-back'></ion-icon></ion-button>
+      </ion-buttons>
+      <ion-title class='circle-container'>
+        <span class='circle' [class.selected]='this.courseIndex === 0' id='netsec'></span>
+        <span class='circle' [class.selected]='this.courseIndex === 1' id='advsec'></span>
+        <span class='circle' [class.selected]='this.courseIndex === 2' id='sysadmin'></span>
+        <span class='circle' [class.selected]='this.courseIndex === 3' id='forensics'></span>
+        <span class='circle' [class.selected]='this.courseIndex === 4' id='unix'></span>
+      </ion-title>
+      <ion-buttons slot='end' class='right-arrow' [class.mobile-right-arrow]='this.mobileService.isMobile()'>
+        <ion-button (click)='nextCourse()'><ion-icon class='arrow' color='dark' name='chevron-forward'></ion-icon></ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
   <div>
     <img id='course-image' [src]='course().image'>
     <ion-text class='ion-text-center'><h1 id='course-title'>{{course().title}}</h1></ion-text>
@@ -15,7 +32,7 @@
   </div>
   <div>
     <ion-text class='ion-text-center'><h3>Learning Objectives</h3></ion-text>
-    <ion-list inset id='course-objectives-list'>
+    <ion-list inset id='course-objectives-list' lines='none'>
       <ion-item *ngFor='let objective of course().objectives'>
         <ion-icon [name]='objective.icon' [color]='objective.color' class='list-icon'></ion-icon>
         {{objective.text}}
@@ -24,15 +41,43 @@
   </div>
   <div>
     <ion-text class='ion-text-center'><h3>Course Topics</h3></ion-text>
-    <ion-list inset id='course-topics-list'>
+    <ion-list inset id='course-topics-list' lines='none'>
       <ion-item *ngFor='let topic of course().topics'>
         {{topic}}
       </ion-item>
     </ion-list>
   </div>
+  <div *ngIf='course().quotes'>
+    <ion-text class='ion-text-center'><h3>Student Reviews</h3></ion-text>
+    <ion-list inset id='course-quotes-list' lines='none'>
+      <ion-item *ngFor='let quote of course().quotes' class='quote-item'>
+        <ion-text color='primary'><h4>"</h4></ion-text>{{quote}}<ion-text color='primary'><h4>"</h4></ion-text>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div *ngIf='course().projects'>
+    <ion-text class='ion-text-center'><h3>Student Projects</h3></ion-text>
+
+    <div id='project-display'>
+      <ion-card *ngFor='let project of course().projects'>
+        <ion-card-header>
+          <ion-card-title>{{project.title}}</ion-card-title>
+          <ion-card-subtitle>{{project.by}} | {{project.year}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <a [href]='project.doc' target='_blank'>Report</a><br><a *ngIf='project.script' [href]='project.script' target='_blank'>Script</a><br>
+
+          {{project.desc}}
+
+          <br><br>
+          <iframe class='youtube-vid' [class.mobile-youtube-vid]='this.mobileService.isMobile()' *ngIf='project.vid' width="50%" height="315" [src]='url(project.vid)' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
   <div>
     <ion-text class='ion-text-center'><h3>Credit Hours: {{course().hours}}</h3></ion-text>
-    <ion-text class='ion-text-center'><h5>This class is {{course().mode}}</h5></ion-text>
+    <ion-text class='ion-text-center'><h5>{{course().mode}}</h5></ion-text>
     <ion-text class='ion-text-center'><h5>Prerequisites: {{course().prereq}}</h5></ion-text>
   </div>
 </ion-content>

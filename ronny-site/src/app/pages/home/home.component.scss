@@ -202,6 +202,7 @@ width: 90%;
 max-width: max-content;
 padding: 10px;
 border: 2px solid white;
+font-size: clamp(1rem, 3vw, 2rem);
 }
 
  #netsec-card:hover {

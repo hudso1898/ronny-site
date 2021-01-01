@@ -21,3 +21,63 @@ border: 2px solid white;
 #course-objectives-list,#course-topics-list {
     margin: 0 5vw;
 }
+.arrow {
+    font-size: 1.5rem;
+}
+.left-arrow {
+    margin-left: 25vw;
+}
+.mobile-left-arrow {
+    margin-left: 10vw !important;
+}
+.right-arrow {
+    margin-right: 25vw;
+}
+.mobile-right-arrow {
+    margin-right: 10vw !important;
+}
+.sticky {
+    position: sticky;
+    top: 1%;
+}
+.circle-container {
+    text-align: center;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.circle.selected#netsec {
+    background-color: #21acf7;
+    transition: background-color 0.3s;
+}
+.circle.selected#advsec {
+    background-color: #f72121;
+    transition: background-color 0.3s;
+}
+.circle.selected#sysadmin {
+    background-color:  #1dd30c;
+    transition: background-color 0.3s;
+}
+.circle.selected#forensics {
+    background-color:  #6121f7;
+    transition: background-color 0.3s;
+}
+.circle.selected#unix {
+    background-color:  #ffffff;
+    transition: background-color 0.3s;
+}
+.quote-item {
+    margin: 10px;
+}
+.youtube-vid {
+    margin: auto;
+}
+.mobile-youtube-vid {
+    width: 100% !important;
+}
