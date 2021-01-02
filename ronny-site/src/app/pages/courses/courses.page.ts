@@ -197,12 +197,12 @@ export class CoursesPage implements OnInit {
           color: 'secondary'
         },
         {
-          text:  "Explain basic computer networking concepts applied to Unix-like systems",
+          text:  "Explain basic computer networking concepts applied to Unix-like systems.",
           icon: 'globe',
           color: 'tertiary'
         },
         {
-          text:  "Correctly configure different services for Unix-like OS",
+          text:  "Correctly configure different services for Unix-like OS.",
           icon: 'settings',
           color: 'primary'
         }

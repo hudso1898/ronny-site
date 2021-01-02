@@ -80,6 +80,7 @@ export class AppComponent implements OnInit {
       translucent: true,
       event: event    
     });
+    popover.onDidDismiss().then(() => this.closeMenu());
     return await popover.present();
   }
   isMobile(): boolean {

@@ -51,7 +51,7 @@
     <ion-text class='ion-text-center'><h3>Student Reviews</h3></ion-text>
     <ion-list inset id='course-quotes-list' lines='none'>
       <ion-item *ngFor='let quote of course().quotes' class='quote-item'>
-        <ion-text color='primary'><h4>"</h4></ion-text>{{quote}}<ion-text color='primary'><h4>"</h4></ion-text>
+        <ion-text color='primary'><h4 class='left-quote'>" </h4></ion-text>{{quote}}<ion-text color='primary'><h4 class='right-quote'> "</h4></ion-text>
       </ion-item>
     </ion-list>
   </div>

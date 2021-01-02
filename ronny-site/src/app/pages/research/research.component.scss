@@ -1,0 +1,29 @@
+.bio-text {
+    margin: 0 5vw;
+}
+#ronny-teaching {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: -10px;
+}
+#title {
+    margin: 0 3vw 0 3vw !important;
+position: absolute;
+top: 10vh;
+width: 94vw;
+padding: 10px;
+font-size: clamp(1rem, 5vw, 5rem);
+background-color: rgba(0,0,0,0.9);
+border: 2px solid white;
+}
+#bio {
+    background-color: white;
+    color: black;
+    padding-bottom: 15px;
+}
+#ed, .margin-left {
+    margin: 0 5vw;
+}
+ul li {
+    margin: 5px;
+}

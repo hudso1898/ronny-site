@@ -36,30 +36,30 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-item class='menu-item' routerLink='/home'>
+          <ion-item class='menu-item' routerLink='/home' (click)='closeMenu()'>
             <ion-icon slot='start' name='home' color='success'></ion-icon>
             <ion-label>Home</ion-label>
           </ion-item>
-          <ion-item class='menu-item' routerLink='/bio'>
+          <ion-item class='menu-item' routerLink='/bio' (click)='closeMenu()'>
             <ion-icon slot='start' name='person' color='primary'></ion-icon>
             <ion-label>Bio</ion-label>
           </ion-item>
-          <ion-item class='menu-item' routerLink='/research'>
+          <ion-item class='menu-item' routerLink='/research' (click)='closeMenu()'>
             <ion-icon slot='start' name='search' color='tertiary'></ion-icon>
             <ion-label>Research</ion-label>
           </ion-item>
-          <a href='/cv.pdf' target='_blank'>
+          <a href='/cv.pdf' target='_blank' (click)='closeMenu()'>
           <ion-item class='menu-item'>
             <ion-icon slot='start' name='document-text' color='dark'></ion-icon>
             <ion-label>CV</ion-label>      
           </ion-item>
           </a>
-          <ion-item class='menu-item no-select' (click)='teachingPresent($event)'>
+          <ion-item class='menu-item no-select' (click)='teachingPresent($event)' id='courses-item'>
             <ion-icon slot='start' name='layers-outline' class='menu-icon'></ion-icon>
             <ion-label>Courses</ion-label>
           </ion-item>
-          <ion-item class='menu-item no-select'>
-            <ion-icon slot='start' name='log-out-outline' color='warning' class='menu-icon'></ion-icon>
+          <ion-item class='menu-item no-select' (click)='closeMenu()'>
+            <ion-icon slot='start' name='log-out-outline' color='danger' class='menu-icon'></ion-icon>
             <a href='https://cybertigers.org' target='_blank' class='glitch white' data-text='CyberTigers @ MU'>CyberTigers @ MU</a>
           </ion-item>
         </ion-list>
