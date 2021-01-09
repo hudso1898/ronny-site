@@ -11,7 +11,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class CoursesPage implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router, private location: Location, private mobileService: MobileService, private domSanitizer: DomSanitizer) { }
+  constructor(private route: ActivatedRoute, private router: Router, private location: Location, public mobileService: MobileService, private domSanitizer: DomSanitizer) { }
 
   courseName: string = "";
 

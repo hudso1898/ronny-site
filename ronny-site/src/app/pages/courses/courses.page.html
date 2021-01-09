@@ -23,7 +23,7 @@
     </ion-toolbar>
   </ion-header>
   <div>
-    <img id='course-image' [src]='course().image'>
+    <div id='course-image' [style.background-image]='"url(" + course().image + ")"'></div>
     <ion-text class='ion-text-center'><h1 id='course-title'>{{course().title}}</h1></ion-text>
   </div>
   <div>
