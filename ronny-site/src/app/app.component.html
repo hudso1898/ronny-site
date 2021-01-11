@@ -3,7 +3,7 @@
       <ion-toolbar *ngIf='!isMobile()'>
         <a href='https://missouri.edu/' target='_blank' slot='start'>
           <ion-avatar slot='start' id='mu-img'>
-            <img src='../assets/mu-logo.png'>
+            <img src='/bazanr/assets/mu-logo.png'>
           </ion-avatar>
         </a>
         <ion-text slot='start'><h3 id='faculty-h3'><a id='faculty-link' class='white' href="https://engineering.missouri.edu/faculty/bazan-antequera/" target="_blank">Ronny Bazan Antequera</a></h3></ion-text>
@@ -11,7 +11,7 @@
       <ion-button routerLink='/home' class='desktop-nav-button' routerLinkActive='active'>Home</ion-button>
       <ion-button routerLink='/bio' class='desktop-nav-button' routerLinkActive='active'>Bio</ion-button>
       <ion-button routerLink='/research' class='desktop-nav-button' routerLinkActive='active'>Research</ion-button>
-      <ion-button href='/assets/cv.pdf' target='_blank' class='desktop-nav-button'>CV</ion-button>
+      <ion-button href='/bazanr/assets/cv.pdf' target='_blank' class='desktop-nav-button'>CV</ion-button>
       <ion-button (click)='teachingPresent($event)' class='desktop-nav-button' [class.active]='this.isOnCourses()'>Courses</ion-button>
       <ion-button class='desktop-nav-button'><a href='https://cybertigers.org' target='_blank' class='glitch' data-text='CyberTigers @ MU'>CyberTigers @ MU</a></ion-button>
     </ion-buttons>
@@ -19,7 +19,7 @@
       <ion-toolbar *ngIf='isMobile()'>
         <a href='https://missouri.edu/' target='_blank' slot='start'>
           <ion-avatar slot='start' id='mu-img'>
-            <img src='../assets/mu-logo.png'>
+            <img src='/bazanr/assets/mu-logo.png'>
           </ion-avatar>
         </a>
         <ion-text slot='start'><h3 id='faculty-h3'><a id='faculty-link' class='white' href="https://engineering.missouri.edu/faculty/bazan-antequera/" target="_blank">Ronny Bazan Antequera</a></h3></ion-text>
@@ -48,7 +48,7 @@
             <ion-icon slot='start' name='search' color='tertiary'></ion-icon>
             <ion-label>Research</ion-label>
           </ion-item>
-          <a href='/assets/cv.pdf' target='_blank' (click)='closeMenu()'>
+          <a href='/bazanr/assets/cv.pdf' target='_blank' (click)='closeMenu()'>
           <ion-item class='menu-item'>
             <ion-icon slot='start' name='document-text' color='dark'></ion-icon>
             <ion-label>CV</ion-label>      

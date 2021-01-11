@@ -63,7 +63,7 @@ export class CoursesPage implements OnInit {
       hours: 3,
       prereq: "INFOTC 2810 or Instructor Consent",
       mode: 'E-Learning 100% Online',
-      image: '../../../assets/netsec.jpg'
+      image: '/bazanr/assets/netsec.jpg'
     },
     "adv_cyber_security": {
       title: "INFOTC 3910: Advanced Cyber Security",
@@ -105,7 +105,7 @@ export class CoursesPage implements OnInit {
       hours: 3,
       prereq: "INFOTC 2910 or Instructor Consent.",
       mode: 'E-Learning 100% Online',
-      image: '../../../assets/advcybersec.jpg'
+      image: '/bazanr/assets/advcybersec.jpg'
     },
     "system_administration": {
       title: 'INFOTC 3850: Computer System Administration',
@@ -146,7 +146,7 @@ export class CoursesPage implements OnInit {
        hours: 3,
        prereq: 'INFOTC 2040 or CMP_SC 2050, junior standing, or Instructor Consent.',
        mode: 'E-Learning 100% Online',
-      image: '../../../assets/sysadmin.jpg'
+      image: '/bazanr/assets/sysadmin.jpg'
     },
     "digital_forensics": {
       title: "CMP_SC/INFOTC 4910: Digital Forensics",
@@ -176,7 +176,7 @@ export class CoursesPage implements OnInit {
       hours: 3,
       prereq: "INFOTC 3910 (Advanced Cyber Security) or Instructor Consent.",
       mode: 'E-Learning 100% Online',
-      image: '../../../assets/forensics.jpg'
+      image: '/bazanr/assets/forensics.jpg'
     },
     "unix_os": {
       title: 'CMP_SC/INFOTC 3530: UNIX Operating System',
@@ -223,7 +223,7 @@ export class CoursesPage implements OnInit {
       hours: 3,
       prereq: "IT2040, CS2050, or Instructor Consent",
       mode: 'In-Person OR E-Learning 100% Online (varies per semester)',
-      image: '../../../assets/unix.jpg',
+      image: '/bazanr/assets/unix.jpg',
       quotes: [
         'By every metric, this class was wonderful. The lectures were clear, concise, and well produced. The class content was relevant and interesting. The labs were engaging and help was always useful and given quickly.',
         'This course really brought together the ‘why’ behind all of my other courses. The skills learned in this course are applicable to all of my other projects, both in school and outside of school.',
@@ -240,7 +240,7 @@ export class CoursesPage implements OnInit {
           by: 'Justin Nguyen',
           title: 'The Effectiveness of Wi-Fi Protected SetupTM(WPS) on the Security of Wireless Computer Networks',
           desc: 'With the growing demand for wireless devices such as the Internet of Things (IoT devices) to power smart homes and provide assistance to the elderly and those with disabilities, consumers and businesses look for ways to connect these devices to their wireless computer networks in a simple and secure way. As a response to this dilemma, the Wi-Fi Alliance® group devised the Wi-Fi Protected Setup TM (WPS) standard to simplify the process of connecting devices to computer networks wirelessly with a push of a button in a secure manner. However, a flaw in the implementation of this standard was discovered by Dominique Bongard in 2014 and coined the Pixie Dust attack, which allowed hackers to gain unauthorized access to wireless computer networks in mere seconds by brute-forcing the 8-digit PIN offline. This raises the question if WPS isa security issue in our current computer networks. This study will examine if the Pixie Dust attack no longer works on high-end wireless routers, or access points that are currently on the market. Due to the extremely small sample size of this study, the security of WPS remains inconclusive because it cannot be determined if the Pixie Dust attack failed since manufacturers implemented a patch or if the attack only affects certain chipsets. In light of this uncertainty, it was concluded that disabling the WPS feature entirely on all wireless devices would be the best course of action until the Wi-Fi Alliance® group releases a new security standard to replace WPS.',
-          doc: '/assets/jnguyen-unix.pdf',
+          doc: '/bazanr/assets/jnguyen-unix.pdf',
           year: 'Fall 2020'
         },
         {
@@ -250,13 +250,13 @@ export class CoursesPage implements OnInit {
           desc: `Do you despise ads and are interested in learning about Raspberry Pi (not the pie kind)? A Raspberry Pi is a low-cost credit-card sized computer that is capable of many things. The Raspberry Pi default OS is Raspbian, a Debian-based OS and a form of Linux distribution, so the commands we have used throughout the semester will come in handy. If you want build a smart mirror that includes voice commands, the Pi can do that. If you want to create a retro gaming console to reminisce childhood memories, the Pi is also capable of doing that too. 
           A networking tool that blocks most ads and is fairly easy to install on a Raspberry Pi is Pi-Hole. Pi-Hole works as a DNS server that uses a list of known list of domain names from advertising, tracking, and analytics services to block ads on your network. As a DNS server, this allows the Pi-hole to intercept any outgoing or incoming DNS requests and can block or pass certain domains from accessing your device, keeping your computer and other devices safe from ads. 
           I walk through the basics. This includes flashing the OS to the sim card to teaching how to set up SSH on the Pi to connect remotely. Lastly, I walk through how to install the network-wide ad blocker, Pi-Hole, on a Pi and how to connect to it either network wide or to individual devices. Once installed, enjoy ad-free apps to ad-free websites. `,
-          doc: '/assets/aschuster-unix.docx'
+          doc: '/bazanr/assets/aschuster-unix.docx'
         },
         {
           by: 'Brian Jiang',
           title: 'Security Issues with UNIX-Like Systems',
           year: "Fall 2020",
-          doc: '/assets/bjiang-unix.docx',
+          doc: '/bazanr/assets/bjiang-unix.docx',
           vid: 'https://www.youtube.com/embed/ufM40h5IUSk',
           desc: `Operating system security has had lots of issues because users on the computer debug and program the code that causes vulnerabilities. Security in an operating system will protect the system being controlled on the computer. The confidentiality, availability and integrity triad issues occur from confidential data being stolen along with data being modified or deleted by hackers. UNIX/Linux is the most secure operating system but still have issues.
 
@@ -268,8 +268,8 @@ export class CoursesPage implements OnInit {
         {
           by: 'Malek Necibi',
           title: 'Predicting Daily Local Weather Information using Recorded Historical Climate Data from NOAA’s NCDC',
-          doc: '/assets/mnecibi-unix.docx',
-          script: '/assets/predictWeather.sh',
+          doc: '/bazanr/assets/mnecibi-unix.docx',
+          script: '/bazanr/assets/predictWeather.sh',
           vid: "https://www.youtube.com/embed/MmGoBgXbnCk",
           year: 'Fall 2020',
           desc: `Meteorology, or the study of atmospheric phenomena such as weather and climate, has advanced tremendously over the past several decades. New prediction techniques have pushed the limits of weather forecasting from merely a few hours to several days into the future. Even so, hurdles introduced by chaos theory have made predicting ever further into the future impossibly difficult. Currently, the most experienced meteorologists using the most advanced modeling techniques are only able to proficiently predict weather conditions up to two weeks into the future. This time frame is frankly insufficient in our current era, where individuals and businesses often make plans months or years into the future. For this reason, we must develop alternative techniques to predict weather conditions deep into the future.
@@ -278,7 +278,7 @@ export class CoursesPage implements OnInit {
         {
           by: 'Maria Lusardi',
           title: 'Implementing HTTPS on a RHEL Web Server',
-          doc: '/assets/mlusardi-unix.docx',
+          doc: '/bazanr/assets/mlusardi-unix.docx',
           year: 'Fall 2020',
           desc: `HTTPS (Hypertext Transfer Protocol Secure) is increasingly becoming the standard for webpages over HTTP (Hypertext Transfer Protocol). There are two parts to HTTPS which make it more secure than HTTP. First, HTTPS uses certificates when connecting client web browsers to web servers. This helps to verify that the server is the actual owner of that web domain, thus preventing attackers from inserting themselves between client and server communications in a man-in-the-middle attack. Second, HTTPS encrypts data sent between the client and the server, further preventing an attacker from accessing information in transit.
 
@@ -294,7 +294,7 @@ export class CoursesPage implements OnInit {
           Applying these methods of analysis using shell scripting is effective in that, by comparison to languages such as C or C++, they are highly portable and readable.  Whereas a shell script may be transferred between different unix operating systems, a C/C++ program must be rebuilt and may not run as expected.  Additionally, shell scripting is easier to use when administrative tasks like redirecting the output, and the scripts can be more easily debugged since the user has access to the source code.  I applied these methods in two different example shell scripts that I built for my report. Overall, shell scripting is more transparent and therefore efficient when it comes to accessing large datasets and has a multitude of capabilities to analyze them.`,
           year: 'Fall 2020',
           title: 'Large Datasets in Shell Scripting',
-          doc: '/assets/hcastelvecchi-unix.pdf',
+          doc: '/bazanr/assets/hcastelvecchi-unix.pdf',
           vid: 'https://www.youtube.com/embed/j1XTyAg5fr4'
         },
         {
@@ -304,7 +304,7 @@ export class CoursesPage implements OnInit {
           Lastly, I discussed other CLIs that are useful in Software Development. I started with Angular and its CLI as this is a super popular JavaScript framework that makes working in development immensely easier. The Angular CLI can be used to serve applications, generate components, and deploy the results. PHP also has it’s own CLI interface as you can compile php files and debug issues that you have in your code. Git’s CLI (that is included in UNIX and MacOS systems by default) allows the developer to collaborate with others while utilizing a repository-hosting website such as GitHub to track versions and share results with others. Overall, I think this assignment was beneficial as I was able to learn more about the uses of CLIs in different situations while also solidifying the basics.`,
           year: 'Fall 2020',
           title: 'Command Line Interfaces in Software Engineering',
-          doc: '/assets/madrales-unix.docx',
+          doc: '/bazanr/assets/madrales-unix.docx',
           vid: 'https://youtube.com/embed/c7Z5OLcNw0s'
         }
       ]
