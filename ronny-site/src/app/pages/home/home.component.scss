@@ -152,7 +152,6 @@ div.info {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 1.3em;
 }
 #courses-div {
     background-image: url('../../../assets/binary.gif');
@@ -187,6 +186,9 @@ div.info {
 #forensics-card {
     background-image: url('../../../assets/forensics.jpg');
 }
+#research-card {
+    background-image: url('../../../assets/research-class.jpg');
+}
 #courses-header {
     background-color: black;
     color: white;
@@ -219,6 +221,9 @@ font-size: clamp(1rem, 3vw, 2rem);
 }
 #unix-card:hover {
     box-shadow: 0 0px 3px 2px #ffffff;
+}
+#research-card:hover {
+    box-shadow: 0 0px 3px 2px #dca902;
 }
 #contact,.info-line {
     margin-left: 5vw;

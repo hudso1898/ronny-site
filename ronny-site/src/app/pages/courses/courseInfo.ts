@@ -368,5 +368,57 @@ export let courseInfo = {
           vid: 'https://youtube.com/embed/c7Z5OLcNw0s'
         }
       ]
+    },
+    "undergrad_research": {
+        title: 'INFOTC 4990: Undergraduate Research (Individual Study)',
+        description: 'This course focuses on the use of state-of-the-art technology that is applicable to cybersecurity. As a student, you can choose between different research projects focused on cybersecurity, or bring your own research project ideas or interests. Some examples are cloud security, cyberinfrastructure, network performance measurement and monitoring, Software Defined Networking, Active Directory security, Wireless security, Cyber Defense systems, and Training Boxes for Cybersecurity. Please contact Ronny Bazan Antequera (bazanantequerar@umsystem.edu) to request a permission number to enroll in the course.',
+        hours: "1-6",
+        prereq: "Instructor Consent",
+        image: '/bazanr/assets/research-class.jpg',
+        objectives: [
+            {
+              text: "Apply the knowledge you obtained in different courses to solve real-life cybersecurity problems.",
+              icon: 'bulb',
+              color: 'dark'
+            },
+            {
+                text: 'Conduct your own research under the supervision of the course instructor.',
+                icon: 'flask',
+                color: 'tertiary'
+            }
+        ],
+        topics: [
+            "Course topics are defined by the student's semester project."
+        ],
+        mode: 'In-Person OR E-Learning 100% Online',
+        quotes: [
+            'Ronny is an amazing professor that allowed me to conduct my own research at my own pace. Ronny was quick to respond to emails regarding scheduling for our meetings and was very understanding.'
+        ],
+        projects: [
+            {
+                by: 'Patrick Kunza',
+                year: 'Spring 2020',
+                title: 'Software Defined Radio (SDR)',
+                desc: 'During this semester, I research wireless hacking capabilities within Software Defined Radio (SDR). Software Defined Radio (SDR) is a type of radio in which all of the physical layer functions are software defined. This definition was obtained from the collaboration from the Institution of Electrical and Electronics Engineers (IEEE) and Wireless Innovation Forum. In other words, SDR is a type of radio communication system that consists of the traditional components implemented in hardware such as filters, amplifiers, and mixers are implemented as software on an embedded system such as a computer, Hackrf One, RTL SDR or other SDR enabled devices.',
+                doc: '/bazanr/assets/pkunza-research.pdf'
+            },
+            {
+                by: 'Steven Coll, Andy Schuster, Nadia Guidry, Michael Schmitt',
+                year: 'Fall 2020',
+                title: 'Capture the Flag Training Box',
+                desc: 'The Capture the Flag (CTF) Training Box is a cybersecurity learning environment made with Docker containers deployed on Amazon Web Services (AWS). Docker containers are units of software that contain light-weight, virtual images of operating systems. We created the CTF learning environment with a perfect difficulty increase as users pass through the training levels. We focused on red team (offensive security) exercises for this virtual environment. These types of skills are crucial for testing your own network to find any vulnerabilities and to patch them before someone else finds them. The final product can be found in https://hackingwith.me/',
+                doc: '/bazanr/assets/ctfbox-research.pdf',
+                vid: 'https://www.youtube.com/embed/jxbBn15lf-c'
+            },
+            {
+                by: 'Brian Mattingly',
+                year: 'Fall 2020',
+                title: 'Wireless Security',
+                desc: 'We all have routers installed in our homes that allow us to get access to the Internet. During this semester I research common vulnerabilities in different routers as well as the benefits and drawbacks of using Linux based alternative OpenSource firmware for routers such as DD-WRT. I tested the security of the routers by using different exploits and methods to break down the security of those devices.',
+                vid: 'https://www.youtube.com/embed/9GSVENNh478'
+            }
+        ]
+
+
     }
   };

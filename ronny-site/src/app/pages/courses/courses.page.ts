@@ -22,7 +22,8 @@ export class CoursesPage implements OnInit {
     'adv_cyber_security',
     'system_administration',
     'digital_forensics',
-    'unix_os'
+    'unix_os',
+    'undergrad_research'
   ];
 
   courseInfo = courseInfo;

@@ -73,6 +73,10 @@ border: 2px solid white;
     background-color:  #ffffff;
     transition: background-color 0.3s;
 }
+.circle.selected#research {
+    background-color: #dca902;
+    transition: background-color 0.3s;
+}
 .quote-item {
     margin: 10px;
 }
