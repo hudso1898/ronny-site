@@ -182,9 +182,13 @@ export let courseInfo = {
          'DHCP',
          'DNS',
          'HTTP and Web Servers',
+         'SSL-TLS',
+         'SFTP',
+         'SAMBA',
+         'Database Administration',
          'SSH and OpenSSH',
          'Microsoft Windows Server',
-         'Microsoft Active Directory Services Configuration and Administration'
+         'Microsoft Active Directory Services Configuration, Administration, and Monitoring'
        ],
        hours: 3,
        prereq: 'INFOTC 2040 or CMP_SC 2050, junior standing, or Instructor Consent.',
